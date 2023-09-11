@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="only light">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d4f145c4cc.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Kaushan+Script&family=Oswald&family=Paprika&family=Rampart+One&family=Sail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Oswald&family=Paprika&family=Rampart+One&family=Sail&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Paprika&family=Rampart+One&family=Sail&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav>
+
+        <h1>ACCCM CANADA</h1>
+
+        <div>
+            <ul>
+                <a href="">FAQ</a>
+                <a href="Contact.html">CONTACT</a>
+                <a href="">WHAT'S NEW</a>
+            </ul>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h1>ACCCM-CANADA</h1>
+
+
+        <center>
+            <p>The ACCCM Association was established in January 2016. Our aim is to provide outreach and healthy adaptation initiatives through education, traditional knowledge, local gatherings and wellness programs that focus on the youth and women of our communities.</p>
+        </center>
+    
+    </main>
+
+
+    <section class="DonationSection">
+
+        <center class="color">
+            <h1>Donate and help others with us!</h1>
+
+            <button>Donate</button><br>
+
+            <img src="cc.png">
+        </center>
+        
+    </section>
+    <footer>
+        <center>
+            <h1>social media accounts</h1>
+            <ul>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+            </ul>
+        </center>
+    </footer>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <nav class="navc">
+
+        <h1>ACCCM CANADA</h1>
+
+        <div>
+            <ul>
+                <a href="">FAQ</a>
+                <a href="#Contact">CONTACT</a>
+                <a href="">WHAT'S NEW</a>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section class="Main">
+
+        <h1>ACCCM-CANADA:</h1>
+
+        <img src="D.jpg" alt=""><br>
+
+        <p>The ACCCM Association was established in January 2016. Our aim is to provide outreach and healthy adaptation initiatives through education, traditional knowledge, local gatherings and wellness programs that focus on the youth and women of our communities.</p>
+        
+        <button>Donate</button>
+
+    </section>
+
+    <br>
+
+    <center class="whatever">
+        <h1 id="Contact">Contact Us:</h1>
+        <form class="ContactBox" onsubmit=" sendEmail(); reset(); return false;">
+
+            <input type="text" id="Name" placeholder="Enter your name..." required>
+            <input type="email" id="EmailAdress" placeholder="Enter your email address"  required>
+            <input type="text" id="PhoneNumber" placeholder="Phone Number Optional"><br>
+            <textarea id="message" rows="7" cols="30"></textarea><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </center>
+
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "makoodlakeed@gmail.com",
+            Password : "2929Aajwbz91",
+            To : 'makoodlakeed@gmail.com',
+            From : document.getElementById("EmailAdress").value,
+            Subject : "A New Contact From Your Website",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+        }
+
+    </script>
+
+</body>
+</html>
